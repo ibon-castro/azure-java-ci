@@ -26,11 +26,6 @@ stages:
     pool: default
 
     steps:
-    - task: UseJavaVersion@1
-      inputs:
-        version: '17'          # Specify the JDK version
-        architecture: 'x64'    # Specify the architecture (x64 or x86)
-
     - task: Maven@4
       displayName: 'Maven Package'
       inputs:
